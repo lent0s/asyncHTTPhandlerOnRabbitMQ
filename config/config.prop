@@ -1,0 +1,12 @@
+##  logger
+logPathFolder:              ./logs
+logFileName:                log
+logMaxFileSizeKB:           1024
+
+##  rabbitMQ
+rConnect:                   amqp://guest:guest@localhost:5672
+rTimeout:                    5
+
+##  server
+serverHost:                 127.0.0.1
+serverPort:                 9000
