@@ -16,7 +16,7 @@ import "github.com/lent0s/asyncHTTPhandlerOnRabbitMQ/config"
 // ##  [server]
 // serverHost:                 127.0.0.1
 // serverPort:                 9000
-func RunService(LogMaxFileSizeKB uint16,
+func RunService(LogMaxFileSizeKB uint16, RTimeout int,
 	LogPathFolder, LogFileName, RConnect, ServerHost, ServerPort string) {
 
 	cfg := config.Config{
@@ -24,6 +24,7 @@ func RunService(LogMaxFileSizeKB uint16,
 		LogFileName:      LogFileName,
 		LogMaxFileSizeKB: LogMaxFileSizeKB,
 		RConnect:         RConnect,
+		RTimeout:         RTimeout,
 		ServerHost:       ServerHost,
 		ServerPort:       ServerPort,
 	}
