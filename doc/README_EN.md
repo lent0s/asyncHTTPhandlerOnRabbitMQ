@@ -1,6 +1,6 @@
 # asyncHTTPhandlerOnRabbitMQ
-(Asynchronous processing engine HTTP requests on RabbitMQ) <a href="https://github.com/lent0s/asyncHTTPhandlerOnRabbitMQ/README.md">
-                                                                   <img width="20" alt="switch to Russian" src="https://github.com/lent0s/asyncHTTPhandlerOnRabbitMQ/blob/main/doc/ru.jpg?raw=true">
+(Asynchronous processing engine HTTP requests on RabbitMQ) <a href="https://github.com/lent0s/asyncHTTPhandlerOnRabbitMQ/blob/main/README.md">
+                                                                   <img width="50" alt="switch to Russian" src="https://github.com/lent0s/asyncHTTPhandlerOnRabbitMQ/blob/main/doc/ru.jpg?raw=true">
                                                                  </a>
 
 The project was released as a demonstration of the interaction between microservices and the RabbitMQ message broker.  
