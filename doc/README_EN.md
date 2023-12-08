@@ -3,7 +3,12 @@
                                                                    <img width="50" alt="switch to Russian" src="https://github.com/lent0s/asyncHTTPhandlerOnRabbitMQ/blob/main/doc/ru.jpg?raw=true">
                                                                  </a>
 
-The project was released as a demonstration of the interaction between microservices and the RabbitMQ message broker.  
+The project was released as a demonstration of the interaction between microservices and the RabbitMQ message broker  
+     ​ ​ ​ ​ ​ ​ ​ ​     ​ ​ ​ ​ ​ ​ ​ ​<a href="https://raw.githubusercontent.com/lent0s/asyncHTTPhandlerOnRabbitMQ/main/doc/async.mp4">
+<img width="40" alt="watch a video about how the service works" src="https://raw.githubusercontent.com/lent0s/asyncHTTPhandlerOnRabbitMQ/main/doc/movie.png">
+</a>      ​ ​ ​ ​ ​ ​ ​ ​     ​ ​ ​ ​ ​ ​ ​ ​(watch a video about how the service works)
+
+---
   
 ![Schema](https://github.com/lent0s/asyncHTTPhandlerOnRabbitMQ/blob/main/doc/scheme.jpg?raw=true)  
 Schematic diagram
