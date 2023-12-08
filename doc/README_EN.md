@@ -6,7 +6,14 @@
 The project was released as a demonstration of the interaction between microservices and the RabbitMQ message broker.  
   
 ![Schema](https://github.com/lent0s/asyncHTTPhandlerOnRabbitMQ/blob/main/doc/scheme.jpg?raw=true)  
-Schematic diagram.
+Schematic diagram
+
+---
+
+## Preparing for work
+For correct operation you need to install and run the server RabbitMQ: <a href="https://www.rabbitmq.com/download.html">
+<img width="200" alt="switch to English" src="https://www.rabbitmq.com/img/logo-rabbitmq.svg">
+</a>  
 
 ---
 
@@ -17,43 +24,57 @@ Setting up and running a project is done in several ways:
    2. [Config File](#Config-File)
 2. [Executable File](#Executable-File)
 
-### Api
-To launch the client, just add to import
- ```Go
+---
+
+## When compiling:
+- Add a repository to the project with the command  
+```
+go get github.com/lent0s/asyncHTTPhandlerOnRabbitMQ
+```  
+- Add to import:
+
+```Go
 import (
     async "github.com/lent0s/asyncHTTPhandlerOnRabbitMQ/cmd"
 )
- ```
-call a function and pass configuration data to it
+```
+
+### Api
+- Call the function and pass configuration data to it
+
  ```Go
-    async.RunService(LogMaxFileSizeKB uint16, LogPathFolder, LogFileName, RConnect, ServerHost, ServerPort string)
+    async.RunService(LogMaxFileSizeKB uint16, RTimeout int, LogPathFolder, LogFileName, RConnect, ServerHost, ServerPort string)
  ```
-then send requests with tasks to ``http://ServerHost:ServerPort/cmd`` and receive responses.
+
+where
+
+```
+- LogPathFolder - <b>existing</b> path to the directory where log files are stored
+- LogFileName - log file name (without extension)
+- LogMaxFileSizeKB - approximate log file size threshold in KB, after which a new file will be created
+- RConnect - address and authentication data to access to RabbitMQ
+- RTimeout - RabbitMQ server timeout
+- ServerHost - IP-address receiving requests
+- ServerPort - port receiving requests
+```
+
+- then compile your application and send POST requests with tasks to ``http://ServerHost:ServerPort/cmd`` and accept responses
 
 ### Config File
-Fill [config file](#cоnfig-file) and start the project:
-```
-    go run async.go
-```
-or with import
- ```Go
-import (
-    async "github.com/lent0s/asyncHTTPhandlerOnRabbitMQ/cmd"
-)
- ```
-call
- ```Go
-    async.Local()
- ```
-then send requests with tasks to ``http://ServerHost:ServerPort/cmd`` and receive responses.
+- Create a `config` directory in your project and call the function `async.Local()`. When the application is initialized for the first time, a configuration file will be created in this directory
+- Fill in [cоnfig file](#cоnfig-file)
+- Launch the application, after which you can send requests with tasks to ``http://ServerHost:ServerPort/cmd`` and accept responses
 
 ---
 
 ### Executable File
-Compile the project with
+- Copy the project using
 ```
-    go build async.go
-```
+git clone https://github.com/lent0s/asyncHTTPhandlerOnRabbitMQ
+```  
+- Fill in [cоnfig file](#cоnfig-file)
+- Build the application `go build async.go`
+
 Start ```async``` with keys (or ```-help``` for reference):
 - lpf - path to the directory where log files are stored
 - lfn - log file name (without extension)
@@ -70,6 +91,7 @@ Example: ```local -spn 9090``` - to run an application listening to requests for
 ### cоnfig file
 Config File ```./config/config.prop``` contains key:value pairs with data to launch the application. If there is an “unclear” situation with the configuration data, simply delete this file and, the next time you start the application, it will self-restore with the default values, after which you can change them correctly and restart the application.  
 Default values:  
+
 ```text
 ##  logger
 logPathFolder:              ./logs
