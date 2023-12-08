@@ -76,6 +76,7 @@ git clone https://github.com/lent0s/asyncHTTPhandlerOnRabbitMQ
 - Build the application `go build async.go`
 
 Start ```async``` with keys (or ```-help``` for reference):
+```
 - lpf - path to the directory where log files are stored
 - lfn - log file name (without extension)
 - lms - approximate log file size threshold in KB, after which a new file will be created
@@ -83,6 +84,7 @@ Start ```async``` with keys (or ```-help``` for reference):
 - rto - RabbitMQ server timeout
 - sip - IP-address receiving requests
 - spn - port receiving requests
+```
 
 Example: ```local -spn 9090``` - to run an application listening to requests for ```http://127.0.0.1:9090``` (ip-address default, port by key)
 
