@@ -1,5 +1,5 @@
 # asyncHTTPhandlerOnRabbitMQ
-(Asynchronous processing engine HTTP requests on RabbitMQ) <a href="https://github.com/asyncHTTPhandlerOnRabbitMQ/doc/README_EN.md">
+(Asynchronous processing engine HTTP requests on RabbitMQ) <a href="https://github.com/lent0s/asyncHTTPhandlerOnRabbitMQ/blob/main/doc/README_EN.md">
                                                                    <img width="50" alt="switch to English" src="https://github.com/lent0s/asyncHTTPhandlerOnRabbitMQ/blob/main/doc/en.jpg?raw=true">
                                                                  </a>
   
