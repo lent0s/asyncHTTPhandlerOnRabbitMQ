@@ -1,10 +1,10 @@
 # asyncHTTPhandlerOnRabbitMQ
 (Asynchronous processing engine HTTP requests on RabbitMQ) <a href="https://github.com/asyncHTTPhandlerOnRabbitMQ/doc/README_EN.md">
-                                                                   <img width="20" alt="switch to English" src="https://github.com/asyncHTTPhandlerOnRabbitMQ/doc/en.jpg">
+                                                                   <img width="50" alt="switch to English" src="https://github.com/lent0s/asyncHTTPhandlerOnRabbitMQ/blob/main/doc/en.jpg?raw=true">
                                                                  </a>
 
 Проект релизован в качестве демонстрации взаимодействия работы микросервисов и брокера сообщений RabbitMQ.  
-![Схема](https://github.com/asyncHTTPhandlerOnRabbitMQ/doc/scheme.jpg)  
+![Схема](https://github.com/lent0s/asyncHTTPhandlerOnRabbitMQ/blob/main/doc/scheme.jpg?raw=true)
 Принципиальная схема.
 
 ## Настройка и запуск
