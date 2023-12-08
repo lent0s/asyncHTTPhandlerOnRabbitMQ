@@ -4,6 +4,11 @@
                                                                  </a>
   
 Проект релизован в качестве демонстрации взаимодействия работы микросервисов и брокера сообщений RabbitMQ  
+     ​ ​ ​ ​ ​ ​ ​ ​     ​ ​ ​ ​ ​ ​ ​ ​<a href="https://raw.githubusercontent.com/lent0s/asyncHTTPhandlerOnRabbitMQ/main/doc/async.mp4">
+<img width="40" alt="видео работы сервиса" src="https://raw.githubusercontent.com/lent0s/asyncHTTPhandlerOnRabbitMQ/main/doc/movie.png">
+</a>      ​ ​ ​ ​ ​ ​ ​ ​     ​ ​ ​ ​ ​ ​ ​ ​(видео работы сервиса)
+
+---
   
 ![Схема](https://github.com/lent0s/asyncHTTPhandlerOnRabbitMQ/blob/main/doc/scheme.jpg?raw=true)
 Принципиальная схема
